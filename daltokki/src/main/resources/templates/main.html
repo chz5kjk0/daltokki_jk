@@ -24,7 +24,7 @@
 <!--        <div id="naver_id_login"></div>-->
 <!--        <a href="https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=vmZ60MBkDiJfUnPtrRxQ&state=state&redirect_uri=http://www.localhost:8080/login/oauth2/code/naver" class="btn-hover color-3">네이버 로그인</a>-->
         <button sec:authorize="isAnonymous()" onclick="location.href='https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=vmZ60MBkDiJfUnPtrRxQ&state=state&redirect_uri=http://www.localhost:8080/login/oauth2/code/naver'" class="btn-hover color-3">네이버 로그인</button>
-        <button sec:authorize="isAnonymous()" onclick="location.href='http://localhost:8080/oauth2/authorization/kakao?redirect_uri=http://localhost:3000/oauth/redirect'" class="btn-hover color-3">카카오 로그인1</button>
+        <button sec:authorize="isAnonymous()" onclick="location.href='https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=f54baccb076ae4f13d0572cd2a3e57f2&redirect_uri=http%3A%2F%2Flocalhost%3A8080%2Flogin%2Foauth2%2Fcode%2Fkakao'" class="btn-hover color-3">카카오 로그인1</button>
         <button sec:authorize="isAnonymous()" onclick="location.href='/oauth2/authorization/kakao'" class="btn-hover color-3">카카오 로그인2</button>
         <button sec:authorize="isAnonymous()" onclick="location.href='/oauth2/authorization/google'" class="btn-hover color-3">Google 로그인</button>
         <!-- 로그인 및 회원가입 끝 -->
